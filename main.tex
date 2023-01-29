@@ -1,12 +1,44 @@
-\documentclass{article}
+\documentclass[a4paper]{article}
 %
 \usepackage[utf8]{inputenc}
+\usepackage[backend=biber, style=ieee]{biblatex} 
+\usepackage{authblk}
+\usepackage[english]{babel}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{csquotes}
 %
-\title{Bachelor scriptie}
-\author{Lucas van Osenbruggen}
+\addbibresource{references.bib}
+%
+\title{Variant algebra based star-allele calling}
+\author[1]{Lucas C.A.W van Osenbruggen}
+\affil[1]{Leiden institute of advanced computer science, Leiden University}
+\date{\today}
 %
 \begin{document}
 %
 \maketitle
+\newpage
+%
+\begin{abstract}
+\input{content/abstract.tex}
+\end{abstract}
+\newpage
+%
+\section{Introduction}
+\input{content/introduction.tex}
+\newpage
+%
+% TODO add further parts
+%
+\section{Discussion}
+\input{content/discussion.tex}
+\newpage
+%
+\section{Conclusion}
+\input{content/conclusion.tex}
+\newpage
+%
+\printbibliography
 %
 \end{document}

@@ -1,5 +1,13 @@
 Contains the LaTex files for the bachelor thesis of Lucas van Osenbruggen.
 
+## Update references
+
+Use the Mendeley web importer to add a reference to the library.
+
+Refresh via Overleaf.
+
+## Track files to read
+
 ## Compile LaTex project
 
 ### Use Overleaf:
