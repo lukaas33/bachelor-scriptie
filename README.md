@@ -1,12 +1,24 @@
-Contains the LaTex files for the bachelor thesis of Lucas van Osenbruggen.
+This repository contains the bachelor thesis of Lucas van Osenbruggen.
+
+It is written in LaTex and integrated with several tools.
+
+The following workflow is used.
+
+## Track files to read
+
+Use the Pocket extension.
+
+Find files on the [Pocket website](https://getpocket.com/saves).
+
+## Summarize
+
+Summarize articles in the [Drive Folder](https://drive.google.com/drive/folders/1xDHmReizvvLMOJcNg4HUaGAqlAxRJNt6).
 
 ## Update references
 
 Use the Mendeley web importer to add a reference to the library.
 
 Refresh via Overleaf.
-
-## Track files to read
 
 ## Compile LaTex project
 
@@ -18,10 +30,6 @@ Refresh via Overleaf.
 
 1. Use the LaTex workshop VSCode extension.
 
-2. Install MiTex:
+2. [Install MiTex](https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-22.10-x64.exe)
 
-[Download MiTex](https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-22.10-x64.exe)
-
-3. Install perl:
-
-[Download Perl](https://strawberryperl.com/download/5.32.1.1/strawberry-perl-5.32.1.1-64bit.msi)
+3. [Install Perl](https://strawberryperl.com/download/5.32.1.1/strawberry-perl-5.32.1.1-64bit.msi)
