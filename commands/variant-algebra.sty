@@ -2,16 +2,19 @@
 %
 %
 % A variant is represented by a pair (R, \phi)
-\newcommandx{\variant}[2][1=$R$, 2=$\phi$]{(#1, #2)}
+\newcommandx{\variant}[2][1=R, 2=\phi]{(#1, #2)}
 % R is a string of symbols from the reference sequence, which is a non-empty alphabet \sigma
-\newcommandx{\reference}[0]{$R$}
+\newcommandx{\reference}[0]{R}
 % \phi is a set of operations that transforms the string R into the observed string O
 % This is dependent on the variant representation language
-\newcommandx{\operations}[0]{$\phi$}
+\newcommandx{\observed}[0]{O}
+\newcommandx{\operations}[0]{\varphi}
 %
 % The length of a string S is represented by |S|
-\newcommandx{\length}[1]{$\lvert #1 \rvert$}
+\newcommandx{\length}[1]{\lvert #1 \rvert}
 % A symbol in a string S is represented by S_i with 1 \le i \le |S|
-\newcommandx{\position}[2][1=$S$, 2=$i$]{$#1_#2$}
+\newcommandx{\position}[2][1=S, 2=i]{#1_#2}
 % A substring of a string S is represented by S_{i...j} with 1 \le i \lt j \le |S|
-\newcommandx{\substring}[3][1=$S$, 2=$i$, 3=$j$]{$#1_{#2 \dots #3$}}
+\newcommandx{\substring}[3][1=S, 2=i, 3=j]{#1_{#2 \dots #3}}
+% 
+% TODO aanvullen
