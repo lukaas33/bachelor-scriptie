@@ -30,9 +30,10 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[R]{\thepage}
-\renewcommand{\headrulewidth}{0pt} % Remove horizontal line of heading
 \setlength{\parindent}{0pt}
 \frenchspacing
+\renewcommand{\headrulewidth}{0pt} % Remove horizontal line of heading
+\renewcommand{\glossarysection}[2][]{} % Remove glossary title
 %
 % Metadata
 \title{Variant Algebra Based Star-Allele Calling\\}
@@ -44,7 +45,6 @@
 %
 % Title page
 \maketitle
-\cite{Vis2023AVariants}\\
 \thispagestyle{fancy}
 \newpage
 %
@@ -79,7 +79,7 @@
 %
 \begin{appendix}
     %
-    \section{Terms}
+    \section{Glossary}
     \label{appendix:Glossary}
     \printglossaries
     %
