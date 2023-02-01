@@ -1,2 +1,4 @@
 % Terms used in the text can have abbreviations/acronyms
 % Acronyms can be referred to using \acrshort and \acrlong
+%
+\newacronym{cyp2d6}{CYP2D6}{Cytochrome P450 2D6}

@@ -6,8 +6,8 @@
     name=variant,
     description={Iets biologisch}
 }
-% %
-% \newglossaryentry{star-allele}{
-%     name=star-allele,
-%     description={Iets biologisch}
-% }
+%
+\newglossaryentry{star-allele}{
+    name=star-allele,
+    description={Iets biologisch}
+}
