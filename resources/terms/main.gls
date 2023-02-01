@@ -1,0 +1,13 @@
+% Terms used in the article that need further explanation 
+% Any terms added will show up in the glossary 
+% They can be referred to using \gls{shortname}
+%
+\newglossaryentry{variant}{
+    name=variant,
+    description={Iets biologisch}
+}
+% %
+% \newglossaryentry{star-allele}{
+%     name=star-allele,
+%     description={Iets biologisch}
+% }

@@ -1,52 +1,89 @@
-\documentclass[a4paper]{article}
+\documentclass[a4paper, 10pt]{article}
 %
+% Packages with global setup
 \usepackage[utf8]{inputenc}
-\usepackage[backend=biber, style=ieee]{biblatex} 
+\usepackage[T1]{fontenc}
 \usepackage{authblk}
-\usepackage[english]{babel}
 \usepackage{url}
 \usepackage{amsmath}
 \usepackage{csquotes}
 \usepackage{graphicx}
 \usepackage{xargs}
+\usepackage{fancyhdr}
+\usepackage[acronym]{glossaries}
+\usepackage[english]{babel}
+\usepackage[toc,page]{appendix}
+\usepackage[backend=biber, style=ieee]{biblatex} 
 \usepackage[font={small},labelfont=bf]{caption}
-\usepackage{commands/variant-algebra} % Custom defined commands
-%
+\usepackage[a4paper, margin=1.5in]{geometry}
+% 
+% Add other resources
+\usepackage{commands/variant-algebra} % Own mathematical commands
 \graphicspath{{resources/images}}
 \addbibresource{resources/references.bib}
-\setlength{\parindent}{0pt}
+\makeglossaries
+\loadglsentries{resources/terms/main.gls}
+\loadglsentries[acronym]{resources/terms/main.acr}
 %
-\title{Variant algebra based star-allele calling}
-\author[1]{Lucas C.A.W van Osenbruggen}
-\affil[1]{Leiden institute of advanced computer science, Leiden University}
-\date{\today}
-\frenchspacing
+% General setup of document 
 \selectlanguage{english}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt} % Remove horizontal line of heading
+\setlength{\parindent}{0pt}
+\frenchspacing
+%
+% Metadata
+\title{Variant Algebra Based Star-Allele Calling\\}
+\author[1]{Lucas C.A.W van Osenbruggen}
+\affil[1]{Leiden Institute of Advanced Computer Science, Leiden University}
+\date{\today}
 %
 \begin{document}
 %
+% Title page
 \maketitle
+\cite{Vis2023AVariants}\\
+\Gls*{variant}
+\thispagestyle{fancy}
 \newpage
 %
+% Abstract
 \begin{abstract}
-\input{content/abstract.tex}
+    \input{content/abstract.tex}
 \end{abstract}
 \newpage
 %
+% Main content
+\fancyhead[L]{\uppercase{Variant Algebra Based Star-Allele Calling}}
 \section{Introduction}
+\label{section:Introduction}
 \input{content/introduction.tex}
 \newpage
 %
 % TODO add further parts
 %
 \section{Discussion}
+\label{section:Discussion}
 \input{content/discussion.tex}
 \newpage
 %
 \section{Conclusion}
+\label{section:Conclusion}
 \input{content/conclusion.tex}
 \newpage
 %
+% Additional content
 \printbibliography
+\newpage
+%
+\begin{appendix}
+    %
+    \section{Terms}
+    \label{appendix:Glossary}
+    \printglossaries
+    %
+\end{appendix}
 %
 \end{document}
