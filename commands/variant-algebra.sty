@@ -1,20 +1,31 @@
 % Custom commands for variant algebra notation
+% Source: Vis2023AVariants
 %
-%
-% A variant is represented by a pair (R, \phi)
-\newcommandx{\variant}[2][1=R, 2=\phi]{(#1, #2)}
-% R is a string of symbols from the reference sequence, which is a non-empty alphabet \sigma
+% R is a string of symbols from the reference sequence, which is a non-empty alphabet \sigma (often {A, C, G, T})
 \newcommandx{\reference}[0]{R}
+%
 % \phi is a set of operations that transforms the string R into the observed string O
-% This is dependent on the variant representation language
+% Operations are deletions and insertions
 \newcommandx{\observed}[0]{O}
 \newcommandx{\operations}[0]{\varphi}
+% 
+% A variant is represented by a pair (R, \phi)
+\newcommandx{\variant}[2][1=\reference, 2=\operations]{(#1, #2)}
 %
 % The length of a string S is represented by |S|
-\newcommandx{\length}[1]{\lvert #1 \rvert}
+\newcommandx{\length}[1][1=S]{\lvert #1 \rvert}
+%
 % A symbol in a string S is represented by S_i with 1 \le i \le |S|
 \newcommandx{\position}[2][1=S, 2=i]{#1_#2}
+%
 % A substring of a string S is represented by S_{i...j} with 1 \le i \lt j \le |S|
 \newcommandx{\substring}[3][1=S, 2=i, 3=j]{#1_{#2 \dots #3}}
 % 
-% TODO aanvullen
+% The difference between sequences is represented with a small d
+\newcommandx{\distance}[2][1=\reference, 2=\observed]{d(#1, #2)}
+% 
+% The set of all minimal representations of an observed sequence is represented with \Phi(R, O)
+\newcommandx{\minset}[2][1=\reference, 2=\observed]{\Phi(#1, #2)}
+% 
+% The set of all elements that occur in any minimal representation of \Phi(R,O) is represented as \Psi(R, O)
+\newcommandx{\minsetall}[2][1=\reference, 2=\observed]{\Psi(#1, #2)}
