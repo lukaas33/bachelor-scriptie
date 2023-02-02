@@ -1,13 +1,20 @@
 % Terms used in the article that need further explanation 
 % Any terms added will show up in the glossary 
-% They can be referred to using \gls{shortname}
+% They can be referred to using \gls{shortname} or \Gls{shortname}
 %
 \newglossaryentry{variant}{
     name=variant,
-    description={Iets biologisch}
+    description={A combination of deletions and insertions that unambiguisly describes the transformation from a reference sequence to an observed sequence. Higher order mutations are considered a combination of insertions and deletions.}
+    % Source: Vis2023AVariants
+}
+%
+\newglossaryentry{suballele}
+{
+    name=suballele,
+    description={An allele that is classified as another due to the changes not being significant. For example having non-expressed point mutations.}    
 }
 %
 \newglossaryentry{star-allele}{
     name=star-allele,
-    description={Iets biologisch}
+    description={A combination of variants observed in real-life genomes.}
 }

@@ -2,7 +2,7 @@ This repository contains the bachelor thesis of Lucas van Osenbruggen.
 
 It is written in LaTex and integrated with several tools.
 
-The following workflow is used.
+The following workflow is used:
 
 ## Track files to read
 
@@ -19,6 +19,14 @@ Summarize articles in the [Drive Folder](https://drive.google.com/drive/folders/
 Use the Mendeley web importer to add a reference to the library.
 
 Refresh via Overleaf.
+
+## Track notation
+
+Create custom commands for notation.
+
+## Track terms and abbreviations
+
+Add glossary items for difficult or domain specific terms and abbreviations.
 
 ## Compile LaTex project
 
