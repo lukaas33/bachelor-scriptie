@@ -4,17 +4,37 @@
 %
 \newglossaryentry{variant}{
     name=variant,
-    description={A combination of deletions and insertions that unambiguisly describes the transformation from a reference sequence to an observed sequence. Higher order mutations are considered a combination of insertions and deletions.}
+    description={A combination of deletions and insertions that unambiguisly describes the transformation from a reference sequence to an observed sequence. Higher order mutations are considered a combination of insertions and deletions. This is a more strict definition that is used in variant algebra.}
     % Source: Vis2023AVariants
 }
 %
 \newglossaryentry{suballele}
 {
     name=suballele,
-    description={An allele that is classified as another due to the changes not being significant. For example having non-expressed point mutations.}    
+    description={An allele that is classified as another due to the changes not being significant. For example having non-expressed point mutations.}  
+    % TODO find source  
 }
 %
 \newglossaryentry{star-allele}{
     name=star-allele,
-    description={A combination of variants observed in real-life genomes.}
+    description={A combination of variants in one haplotype observed in real-life genomes.}
+    % TODO find source
+}
+%
+\newglossaryentry{haplotype}{
+    name=haplotype,
+    description={Genes that are on the same chromome are said to be part of the same haplotype.}
+    % TODO find source
+}
+%
+\newglossaryentry{cyp2d6 gene}{
+    name=cyp2d6 gene,
+    description={A pharmacogentic gene that has clinical significance and has been studied extensively.}
+    % TODO find source
+}
+%
+\newglossaryentry{pharmacogenetics}{
+    name=pharmacogenetics,
+    description={The field of looking for the effects of genetic variation on medication.}
+    % TODO find source
 }
