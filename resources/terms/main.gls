@@ -1,40 +1,81 @@
-% Terms used in the article that need further explanation 
-% Any terms added will show up in the glossary 
-% They can be referred to using \gls{shortname} or \Gls{shortname}
+% Terms used in the article that need further explanation.
+% Any terms referenced will show up in the glossary.
+% They can be referred to using \gls{shortname} or \Gls{shortname}.
+% Acronyms can be referred to using \acrshort and \acrlong.
+% TODO split into several files?
 %
+% Terms
 \newglossaryentry{variant}{
-    name=variant,
-    description={A combination of deletions and insertions that unambiguisly describes the transformation from a reference sequence to an observed sequence. Higher order mutations are considered a combination of insertions and deletions. This is a more strict definition that is used in variant algebra.}
+    name={variant},
+    description={A combination of deletions and insertions that unambiguously describes the transformation from a reference sequence to an observed sequence. Higher order mutations are considered a combination of insertions and deletions. This is a more strict definition that is used in variant algebra.},
+    symbol={\ensuremath{\variant}}
     % Source: Vis2023AVariants
 }
-%
 \newglossaryentry{suballele}
 {
-    name=suballele,
+    name={suballele},
     description={An allele that is classified as another due to the changes not being significant. For example having non-expressed point mutations.}  
     % TODO find source  
 }
-%
 \newglossaryentry{star-allele}{
-    name=star-allele,
+    name={star-allele},
     description={A combination of variants in one haplotype observed in real-life genomes.}
     % TODO find source
 }
-%
 \newglossaryentry{haplotype}{
-    name=haplotype,
-    description={Genes that are on the same chromome are said to be part of the same haplotype.}
+    name={haplotype},
+    description={Genes that are on the same chromosome are said to be part of the same haplotype.}
     % TODO find source
 }
-%
 \newglossaryentry{cyp2d6 gene}{
-    name=cyp2d6 gene,
-    description={A pharmacogentic gene that has clinical significance and has been studied extensively.}
+    name={cyp2d6 gene},
+    description={A pharmacogenetic gene that has clinical significance and has been studied extensively.}
     % TODO find source
 }
-%
 \newglossaryentry{pharmacogenetics}{
-    name=pharmacogenetics,
+    name={pharmacogenetics},
     description={The field of looking for the effects of genetic variation on medication.}
     % TODO find source
+}
+\newglossaryentry{reference sequence}{
+    name={reference sequence},
+    description={A string of symbols from a non-empty alphabet that is used as a reference for aligning observed sequences.},
+    symbol={\ensuremath{\reference}}
+    % Source: Vis2023AVariants
+}
+\newglossaryentry{observed sequence}{
+    name={observed sequence},
+    description={A string of symbols from a non-empty alphabet observed in a patient.},
+    symbol={\ensuremath{\observed}}
+    % Source: Vis2023AVariants
+}
+\newglossaryentry{operations}{
+    name={operations},
+    description={A set of insertion and deletion mutations that unambiguously transforms the reference string into the observed string.},
+    symbol={\ensuremath{\operations}}
+    % Source: Vis2023AVariants
+}
+\newglossaryentry{edit distance}{
+    name={edit distance},
+    description={The minimum number of insertions and deletions required to transform one sequence into another.},
+    symbol={\ensuremath{\distance}}
+    % Source: Vis2023AVariants
+}
+\newglossaryentry{minimal representations}{
+    name={minimal representations},
+    description={A set containing all minimal representations of the variants that can result in the difference between an observed and reference sequence.},
+    symbol={\ensuremath{\minset}}
+    % Source: Vis2023AVariants
+}
+% Acronyms
+\newacronym{grch}{GRCh}{
+    genome reference consortium Human Build
+    % followed by a number, e.g. 37
+} 
+\newacronym{hg}{hg}{
+    human genome
+    % followed by a number, e.g. 19
+} 
+\newacronym{vcf}{VCF}{
+    variant call format
 }

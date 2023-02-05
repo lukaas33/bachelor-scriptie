@@ -10,9 +10,10 @@
 \usepackage{graphicx}
 \usepackage{xargs}
 \usepackage{fancyhdr}
-\usepackage[acronym]{glossaries}
 \usepackage[english]{babel}
 \usepackage[toc,page]{appendix}
+\usepackage[acronym,symbols]{glossaries-extra}
+\usepackage{glossary-longragged}
 \usepackage[backend=biber, style=ieee]{biblatex} 
 \usepackage[font={small},labelfont=bf]{caption}
 \usepackage[a4paper, margin=1.5in]{geometry}
@@ -21,9 +22,10 @@
 \usepackage{commands/variant-algebra} % Own mathematical commands
 \graphicspath{{resources/images}}
 \addbibresource{resources/references.bib}
-\loadglsentries{resources/terms/main.gls}
-\loadglsentries[acronym]{resources/terms/main.acr}
+\loadglsentries[acronym]{resources/terms/main.gls}
 \makeglossaries
+\setglossarystyle{altlongragged4col}
+\glsaddall % Display all items TODO remove?
 %
 % General setup of document 
 \selectlanguage{english}
@@ -86,7 +88,6 @@
     \section{Glossary}
     \label{appendix:Glossary}
     \printglossaries
-    %
 \end{appendix}
 %
 \end{document}
