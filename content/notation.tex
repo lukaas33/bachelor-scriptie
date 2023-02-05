@@ -1,20 +1,28 @@
 \subsection*{Variant relation definitions}
 %
-Taking $\operations_O' \in \minset[R][O]$ and $\operations_P' \in \minset[R][P]$:
+For the observed sequences $O$ and $P$.\\
+The mutually exclusive boolean relationships are defined as follows: \\
+\\
+Define $\operations_O' \in \minset[R][O]$ and $\operations_P' \in \minset[R][P]$.\\
 %
+% TODO write this more nicely
+% TODO define graph arrows
 \begin{table}[h!]
     \begin{tabular}{l l l}
         Equivalence & $\equivalent[O][P]$ & $\Leftrightarrow \minset[R][O] = \minset[R][P]$ \\
-        Containment & $\contains[O][P]$   & $\Leftrightarrow \operations_O' \not\supseteq \operations_P' \land \nequivalent[O][P]  $ \\
-        Overlap     & $\overlap[O][P]$    & $\Leftrightarrow \operations_O' \cap \operations_P' = \emptyset \land \nequivalent[O][P] \land \ncontains[O][P] \land \ncontains[P][O]$ \\
-        Disjoint   & $\disjoint[O][P]$ & $\Leftrightarrow \nequivalent[O][P] \land \ncontains[O][P] \land \ncontains[P][O] \land \noverlap[O][P]$
+                    &                     & $\Leftrightarrow \distance[O][P] = 0$ \\
+        Containment & $\contains[O][P]$   & $\Leftrightarrow \operations_O' \not\supseteq \operations_P'$ \\ %\land \nequivalent[O][P]  $ \\
+                    &                     & $\Leftrightarrow \distance[R][O] - \distance[R][P] = \distance[O][P] \land \distance[O][P] > 0$ \\
+        Overlap     & $\overlap[O][P]$    & $\Leftrightarrow \operations_O' \cap \operations_P' \ne \emptyset$ \\ %\land \nequivalent[O][P] \land \ncontains[O][P] \land \ncontains[P][O]$ \\
+        Disjoint   & $\disjoint[O][P]$    & $\Leftrightarrow \minsetall[R][O] \cap \minsetall[R][P] = \emptyset$ \\
+                  % &                      & $\Leftrightarrow \nequivalent[O][P] \land \ncontains[O][P] \land \ncontains[P][O] \land \noverlap[O][P]$ \\
     \end{tabular}
 \end{table}
 %
 \subsection*{Variant relation properties}
 %
 \begin{table}[h!]
-    \begin{tabular}{|l|l|l|l|}
+    \begin{tabular}{|l|c|c|c|}
         \hline
         \textbf{Relation} & \textbf{Symmetrical} & \textbf{Reflexive} & \textbf{Transitive} \\
         \hline

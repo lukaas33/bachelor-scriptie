@@ -63,8 +63,24 @@
 }
 \newglossaryentry{minimal representations}{
     name={minimal representations},
-    description={A set containing all minimal representations of the variants that can result in the difference between an observed and reference sequence.},
+    description={A set containing all minimal representations of a variant that can result in the same difference between an observed and reference sequence.},
     symbol={\ensuremath{\minset}}
+    % Source: Vis2023AVariants
+}
+\newglossaryentry{minimal representations operations}{
+    name={minimal representations operations},
+    description={A set containing all elements of all minimal representations of a certain variant.},
+    symbol={\ensuremath{\minsetall}}
+    % Source: Vis2023AVariants
+}
+\newglossaryentry{maximum influence interval}{
+    name={maximum influence interval},
+    description={The interval between the lowest and highest positions of the insertions and deletions.}
+    % Source: Vis2023AVariants
+}
+\newglossaryentry{supremal variant representation}{
+    name={supremal variant representation},
+    description={A representation that represents each variant as an deletion spanning the maximum influence interval and an insertion that contains some redundant sequence information.}
     % Source: Vis2023AVariants
 }
 % Acronyms
@@ -79,3 +95,4 @@
 \newacronym{vcf}{VCF}{
     variant call format
 }
+\newacronym{hgvs}{HGVS}{Human genome variation nomenclature}
