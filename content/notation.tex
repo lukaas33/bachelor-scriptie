@@ -1,0 +1,32 @@
+\subsection*{Variant relation definitions}
+%
+Taking $\operations_O' \in \minset[R][O]$ and $\operations_P' \in \minset[R][P]$:
+%
+\begin{table}[h!]
+    \begin{tabular}{l l l}
+        Equivalence & $\equivalent[O][P]$ & $\Leftrightarrow \minset[R][O] = \minset[R][P]$ \\
+        Containment & $\contains[O][P]$   & $\Leftrightarrow \operations_O' \not\supseteq \operations_P' \land \nequivalent[O][P]  $ \\
+        Overlap     & $\overlap[O][P]$    & $\Leftrightarrow \operations_O' \cap \operations_P' = \emptyset \land \nequivalent[O][P] \land \ncontains[O][P] \land \ncontains[P][O]$ \\
+        Disjoint   & $\disjoint[O][P]$ & $\Leftrightarrow \nequivalent[O][P] \land \ncontains[O][P] \land \ncontains[P][O] \land \noverlap[O][P]$
+    \end{tabular}
+\end{table}
+%
+\subsection*{Variant relation properties}
+%
+\begin{table}[h!]
+    \begin{tabular}{|l|l|l|l|}
+        \hline
+        \textbf{Relation} & \textbf{Symmetrical} & \textbf{Reflexive} & \textbf{Transitive} \\
+        \hline
+        Equivalence       & X                    & X                  & X \\
+        \hline 
+        Contains          &                      &                    & X \\
+        \hline 
+        Is contained      &                      &                    & X \\
+        \hline 
+        Overlap           & X                    &                    &   \\
+        \hline 
+        Disjoint          & X                    &                    &   \\
+        \hline
+    \end{tabular}
+\end{table}
