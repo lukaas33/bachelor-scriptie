@@ -1,5 +1,7 @@
 This repository contains the bachelor thesis of Lucas van Osenbruggen.
 
+This is the thesis itself and the code is contained in [another repo](https://github.com/lukaas33/VA-star-allele-calling).
+
 It is written in LaTex and integrated with several tools.
 
 The following workflow is used:
