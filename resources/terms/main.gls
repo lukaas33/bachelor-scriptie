@@ -19,7 +19,17 @@
 }
 \newglossaryentry{star-allele}{
     name={star-allele},
-    description={An observed sequence which differs from a reference by non-empty set of mutations.}
+    description={An observed sequence which differs from a reference by non-empty set of mutations. The exception is *1 which describes the canonical wild-type. Mutations can be shared by star-alleles.}
+    % Source: Numanagic2018AllelicGenes
+}
+\newglossaryentry{major star-allele}{
+    name={major star-allele},
+    description={A star-allele which is defined by gene disrupting effects. It contains mutations which affect the aminoacid sequence or indirectly affect enzyme activity.}
+    % Source: Numanagic2018AllelicGenes
+}
+\newglossaryentry{minor star-allele}{
+    name={minor star-allele},
+    description={A major star-allele which has been extended with one or more neural/non-functional mutations.}
     % Source: Numanagic2018AllelicGenes
 }
 \newglossaryentry{haplotype}{
@@ -29,8 +39,8 @@
 }
 \newglossaryentry{cyp2d6 gene}{
     name={cyp2d6 gene},
-    description={A pharmacogenetic gene that has clinical significance and has been studied extensively.}
-    % TODO find source
+    description={A pharmacogenetic gene that is involved in drug metabolism and has been studied extensively. It is highly polymorphic and one of the most difficult genes for determining the star-alleles of.}
+    % Source: Numanagic2018AllelicGenes
 }
 \newglossaryentry{pharmacogenetics}{
     name={pharmacogenetics},
@@ -95,4 +105,12 @@
 \newacronym{vcf}{VCF}{
     variant call format
 }
-\newacronym{hgvs}{HGVS}{Human genome variation nomenclature}
+\newacronym{sam}{SAM}{
+    sequence alignment map
+}
+\newacronym{bam}{BAM}{
+    binary alignment map
+}
+\newacronym{hgvs}{HGVS}{
+    Human genome variation nomenclature
+}
