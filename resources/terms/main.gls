@@ -19,8 +19,8 @@
 }
 \newglossaryentry{star-allele}{
     name={star-allele},
-    description={A combination of variants in one haplotype observed in real-life genomes.}
-    % TODO find source
+    description={An observed sequence which differs from a reference by non-empty set of mutations.}
+    % Source: Numanagic2018AllelicGenes
 }
 \newglossaryentry{haplotype}{
     name={haplotype},
