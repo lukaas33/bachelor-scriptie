@@ -25,11 +25,13 @@
 \newglossaryentry{major star-allele}{
     name={major star-allele},
     description={A star-allele which is defined by gene disrupting effects. It contains mutations which affect the aminoacid sequence or indirectly affect enzyme activity.}
+    % TODO check this (population)
     % Source: Numanagic2018AllelicGenes
 }
 \newglossaryentry{minor star-allele}{
     name={minor star-allele},
     description={A major star-allele which has been extended with one or more neural/non-functional mutations.}
+    % TODO check this (population)
     % Source: Numanagic2018AllelicGenes
 }
 \newglossaryentry{haplotype}{
