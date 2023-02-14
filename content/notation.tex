@@ -11,7 +11,8 @@ Define $\operations_O' \in \minset[R][O]$ and $\operations_P' \in \minset[R][P]$
     \begin{tabular}{l l l}
         Equivalence & $\equivalent[O][P]$ & $\Leftrightarrow \minset[R][O] = \minset[R][P]$ \\
                     &                     & $\Leftrightarrow \distance[O][P] = 0$ \\
-        Containment & $\contains[O][P]$   & $\Leftrightarrow \operations_O' \not\supseteq \operations_P'$ \\ %\land \nequivalent[O][P]  $ \\
+                    &                     &  $\Leftrightarrow O = P$ \\
+        Containment & $\contains[O][P]$   & $\Leftrightarrow \operations_O' \subsetneq \operations_P'$ \\ %\land \nequivalent[O][P]  $ \\
                     &                     & $\Leftrightarrow \distance[R][O] - \distance[R][P] = \distance[O][P] \land \distance[O][P] > 0$ \\
         Overlap     & $\overlap[O][P]$    & $\Leftrightarrow \operations_O' \cap \operations_P' \ne \emptyset$ \\ %\land \nequivalent[O][P] \land \ncontains[O][P] \land \ncontains[P][O]$ \\
         Disjoint   & $\disjoint[O][P]$    & $\Leftrightarrow \minsetall[R][O] \cap \minsetall[R][P] = \emptyset$ \\
