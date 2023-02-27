@@ -22,17 +22,17 @@
     description={An observed sequence which differs from a reference by non-empty set of mutations. The exception is *1 which describes the canonical wild-type. Mutations can be shared by star-alleles.}
     % Source: Numanagic2018AllelicGenes
 }
-\newglossaryentry{major star-allele}{
-    name={major star-allele},
-    description={A star-allele which is defined by gene disrupting effects. It contains mutations which affect the aminoacid sequence or indirectly affect enzyme activity.}
-    % TODO check this (population)
-    % Source: Numanagic2018AllelicGenes
+\newglossaryentry{core star-allele}{
+    name={core star-allele},
+    description={A star-allele which is defined by gene disrupting effects. It contains mutations which affect the aminoacid sequence or indirectly affect enzyme activity. All variants in a coreallele must change the aminoacid sequence, splicing or expression levels. The variants in a corealle must be present in all suballeles.}
+    % TODO the same as major?
+    % Source: Numanagic2018AllelicGenes; pharmvar standards
 }
-\newglossaryentry{minor star-allele}{
-    name={minor star-allele},
-    description={A major star-allele which has been extended with one or more neural/non-functional mutations.}
-    % TODO check this (population)
-    % Source: Numanagic2018AllelicGenes
+\newglossaryentry{sub star-allele}{
+    name={sub star-allele},
+    description={A core star-allele which has been extended with one or more neutral/non-functional mutations. It is believed to be functional equal to the core allele.}
+    % TODO the same as minor?
+    % Source: Numanagic2018AllelicGenes; pharmvar standards
 }
 \newglossaryentry{haplotype}{
     name={haplotype},
@@ -94,6 +94,11 @@
     name={supremal variant representation},
     description={A representation that represents each variant as an deletion spanning the maximum influence interval and an insertion that contains some redundant sequence information.}
     % Source: Vis2023AVariants
+}
+\newglossaryentry{variant group}{
+    name={variant group},
+    description={Variants which together cause an aminoacid change but not independently.}
+    % Source: pharmvar standards
 }
 % Acronyms
 \newacronym{grch}{GRCh}{
