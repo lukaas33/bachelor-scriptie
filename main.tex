@@ -1,6 +1,7 @@
 \documentclass[a4paper, 10pt]{article}
 %
 % Packages with global setup
+% TODO move packages to separate file
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{authblk}
@@ -11,6 +12,7 @@
 \usepackage{graphicx}
 \usepackage{xargs}
 \usepackage{fancyhdr}
+\usepackage{svg}
 \usepackage[english]{babel}
 \usepackage[toc,page]{appendix}
 \usepackage[acronym,symbols]{glossaries-extra}
@@ -26,7 +28,7 @@
 \loadglsentries[acronym]{resources/terms/main.gls}
 \makeglossaries
 \setglossarystyle{altlongragged4col}
-\glsaddall % Display all items TODO remove?
+\glsaddall % Display all items TODO remove
 %
 % General setup of document 
 \selectlanguage{english}
@@ -77,7 +79,20 @@
 \input{content/introduction.tex}
 \newpage
 %
-% TODO add further parts
+\section{Genetic variants can have relations to each other}
+\label{section:Relations}
+%
+% TODO describe relations (definitions, describe properties)
+%
+\section{Variant relations can be represented as a graph}
+\label{section:Graph}
+%
+% TODO describe graph representation
+%
+\subsection{Most graph edges can be pruned without loss of information}
+\input{content/relations/pruning.tex}
+\label{ssection:Pruning}
+\newpage
 %
 \section{Discussion}
 \label{section:Discussion}

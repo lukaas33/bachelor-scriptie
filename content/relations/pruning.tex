@@ -1,0 +1,11 @@
+Based on the definitions of the relations, some relations are redundant. 
+These relations can be pruned from the graph without loss of information since they are implicit from other relations. 
+This pruning process results in a more sparse graph which is more easily interpreted by humans.
+In the following instances relations can be pruned:
+\paragraph*{Reflexivity} The equivalence relation is reflexive. Since every variant is equivalent to itself, the relation can be pruned.
+\begin{figure}
+    \centering
+    \includesvg[width=0.5\textwidth]{relations/pruning/reflexive.svg}
+    \caption{Reflexivity}
+    \label{fig:reflexivity}
+\end{figure}
