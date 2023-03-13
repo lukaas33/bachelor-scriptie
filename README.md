@@ -43,3 +43,56 @@ Add glossary items for difficult or domain specific terms and abbreviations.
 2. [Install MiTex](https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-22.10-x64.exe)
 
 3. [Install Perl](https://strawberryperl.com/download/5.32.1.1/strawberry-perl-5.32.1.1-64bit.msi)
+
+4. [Install Inkscape](https://inkscape.org/release/inkscape-1.2.2/windows/64-bit/msi/dl/)
+
+5. Set the settings to:
+
+```json
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "pdflatex -> bibtex -> pdflatex * 2",
+            "tools": [
+                "pdflatex",
+                "biber",
+                "makeglossaries",
+                "pdflatex"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "--shell-escape",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-output-directory",
+                "%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "biber",
+            "command": "biber",
+            "args": [
+              "--output-directory",
+              "%OUTDIR%",
+              "main.bcf"
+            ]
+        },
+        {
+            "name": "makeglossaries",
+            "command": "makeglossaries",
+            "args": [
+              "-d",
+              "%OUTDIR%",
+              "main",
+            ]
+        }
+    ]
+
+```
